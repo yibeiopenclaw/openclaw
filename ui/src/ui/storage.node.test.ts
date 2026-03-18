@@ -135,6 +135,7 @@ describe("loadSettings default gateway URL derivation", () => {
       navCollapsed: false,
       navWidth: 220,
       navGroupsCollapsed: {},
+      borderRadius: 50,
       sessionsByGateway: {
         "wss://gateway.example:8443/openclaw": {
           sessionKey: "agent",
@@ -167,6 +168,7 @@ describe("loadSettings default gateway URL derivation", () => {
       navCollapsed: false,
       navWidth: 220,
       navGroupsCollapsed: {},
+      borderRadius: 50,
     });
 
     expect(loadSettings()).toMatchObject({
@@ -197,6 +199,7 @@ describe("loadSettings default gateway URL derivation", () => {
       navCollapsed: false,
       navWidth: 220,
       navGroupsCollapsed: {},
+      borderRadius: 50,
     });
 
     localStorage.setItem(
@@ -245,6 +248,7 @@ describe("loadSettings default gateway URL derivation", () => {
       navCollapsed: false,
       navWidth: 220,
       navGroupsCollapsed: {},
+      borderRadius: 50,
     });
     expect(loadSettings()).toMatchObject({
       gatewayUrl: "wss://gateway.example:8443/openclaw",
@@ -262,6 +266,7 @@ describe("loadSettings default gateway URL derivation", () => {
       navCollapsed: false,
       navWidth: 220,
       navGroupsCollapsed: {},
+      borderRadius: 50,
       sessionsByGateway: {
         "wss://gateway.example:8443/openclaw": {
           sessionKey: "main",
@@ -294,6 +299,7 @@ describe("loadSettings default gateway URL derivation", () => {
       navCollapsed: false,
       navWidth: 220,
       navGroupsCollapsed: {},
+      borderRadius: 50,
     });
     saveSettings({
       gatewayUrl: "wss://gateway.example:8443/openclaw",
@@ -309,6 +315,7 @@ describe("loadSettings default gateway URL derivation", () => {
       navCollapsed: false,
       navWidth: 220,
       navGroupsCollapsed: {},
+      borderRadius: 50,
     });
 
     expect(loadSettings().token).toBe("");
@@ -337,6 +344,7 @@ describe("loadSettings default gateway URL derivation", () => {
       navCollapsed: false,
       navWidth: 320,
       navGroupsCollapsed: {},
+      borderRadius: 50,
     });
 
     expect(JSON.parse(localStorage.getItem("openclaw.control.settings.v1") ?? "{}")).toMatchObject({
@@ -369,6 +377,7 @@ describe("loadSettings default gateway URL derivation", () => {
       navCollapsed: false,
       navWidth: 220,
       navGroupsCollapsed: {},
+      borderRadius: 50,
     });
 
     saveSettings({
@@ -385,6 +394,7 @@ describe("loadSettings default gateway URL derivation", () => {
       navCollapsed: false,
       navWidth: 220,
       navGroupsCollapsed: {},
+      borderRadius: 50,
     });
 
     localStorage.setItem(
@@ -440,6 +450,7 @@ describe("loadSettings default gateway URL derivation", () => {
         navCollapsed: false,
         navWidth: 220,
         navGroupsCollapsed: {},
+        borderRadius: 50,
       });
     }
 
